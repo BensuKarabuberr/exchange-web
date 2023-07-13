@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Döviz Kuru Uygulaması</title>
+    <link rel="stylesheet" href="doviz-kuru.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h5>DÖVİZ KURU ÇEVİRME</h5>
+        </div>
+        <div class="inputWrapper">
+          <input id="amount" type="number" placeholder="Tutar" />
+
+          <div class="currencyOptions">
+            <select id="firstCurrencyOption">
+              <option selected>USD</option>
+              <option>EUR</option>
+              <option>JPY</option>
+              <option>GBP</option>
+              <option>CNY</option>
+              <option>AUD</option>
+              <option>CAD</option>
+              <option>CHF</option>
+              <option>HKD</option>
+              <option>SGD</option>
+              <option>SEK</option>
+              <option>KRW</option>
+              <option>NOK</option>
+              <option>NZD</option>
+              <option>INR</option>
+              <option>MXN</option>
+              <option>TWD</option>
+              <option>ZAR</option>
+              <option>BRL</option>
+              <option>DKK</option>
+              <option>PLN</option>
+              <option>THB</option>
+              <option>ILS</option>
+              <option>IDR</option>
+              <option>CZK</option>
+              <option>AED</option>
+              <option>TRY</option>
+              <option>HUF</option>
+              <option>CLP</option>
+              <option>SAR</option>
+              <option>MYR</option>
+              <option>COP</option>
+              <option>RUB</option>
+            </select>
+
+            <i
+              id="exchangeIcon"
+              class="fa-solid fa-arrow-right-arrow-left"
+              style="color: #000000"
+            ></i>
+
+            <select id="secondCurrencyOption">
+              <option>USD</option>
+              <option>EUR</option>
+              <option selected>TRY</option>
+              <option>JPY</option>
+              <option>GBP</option>
+              <option>CNY</option>
+              <option>AUD</option>
+              <option>CAD</option>
+              <option>CHF</option>
+              <option>HKD</option>
+              <option>SGD</option>
+              <option>SEK</option>
+              <option>KRW</option>
+              <option>NOK</option>
+              <option>NZD</option>
+              <option>INR</option>
+              <option>MXN</option>
+              <option>TWD</option>
+              <option>ZAR</option>
+              <option>BRL</option>
+              <option>DKK</option>
+              <option>PLN</option>
+              <option>THB</option>
+              <option>ILS</option>
+              <option>IDR</option>
+              <option>CZK</option>
+              <option>AED</option>
+              <option>HUF</option>
+              <option>CLP</option>
+              <option>SAR</option>
+              <option>MYR</option>
+              <option>COP</option>
+              <option>RUB</option>
+            </select>
+          </div>
+
+          <input type="number" id="result" readonly placeholder="Sonuç" />
+          <!--
+          <i
+            id="onOff"
+            class="fa-solid fa-toggle-on"
+            style="color: #6dd4ee;"></i>
+          </i>
+          -->
+        </div>
+      </div>
+    </div>
+
+    <script src="doviz-currency.js"></script>
+    <script src="doviz-main.js"></script>
+  </body>
+</html>
